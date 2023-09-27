@@ -1,4 +1,4 @@
-- [**terraform-aws-architecture**](#terraform-aws-architecture)
+- [**terraform-aws-automation-solutions**](#terraform-aws-automation-solutions)
   - [**Introduction**](#introduction)
   - [**aws-stig-hardened-amis**](#aws-stig-hardened-amis)
     - [**STIG Component Naming Scheme**](#stig-component-naming-scheme)
@@ -7,9 +7,9 @@
       - [**Exact AMI Build Invocation**](#exact-ami-build-invocation)
       - [**Clean Up Old AMIs**](#clean-up-old-amis)
 
-# **terraform-aws-architecture**
+# **terraform-aws-automation-solutions**
 
-AWS Architecture Solutions written in HCL to be deployed with Terraform
+HCL workflows which will deploy AWS resources through Terraform to automate tasks
 
 ## **Introduction**
 The goal of this repository is to provide solutions for key AWS architecture needs and/or Terraform dynamic coding challenges. I will try to keep the cost, dependencies, deployed resources, and maintenance succinct in that general order of importance. I may discuss ways in which you can further expand on the automation and I may also provide those solutions if asked.
