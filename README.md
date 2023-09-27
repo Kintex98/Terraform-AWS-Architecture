@@ -12,7 +12,7 @@
 HCL workflows which will deploy AWS resources through Terraform to automate tasks
 
 ## **Introduction**
-The goal of this repository is to provide solutions for key AWS architecture needs and/or Terraform dynamic coding challenges. I will try to keep the cost, dependencies, deployed resources, and maintenance succinct in that general order of importance. I may discuss ways in which you can further expand on the automation and I may also provide those solutions if asked.
+The goal of this repository is to provide solutions for key AWS automation needs and/or Terraform dynamic coding challenges. I will try to keep the cost, dependencies, deployed resources, and maintenance succinct in that general order of importance. I may discuss ways in which you can further expand on the automation and I may also provide those solutions if asked.
 
 ## **aws-stig-hardened-amis**
 
@@ -35,9 +35,9 @@ stig-build-<platform>-<severity>
 e.g. stig-build-windows-medium
 ```
 | Severity | Platform |
-| ------------ | ------------ |
-| low          | linux        |
-| medium       | windows      |
+| -------- | -------- |
+| low      | linux    |
+| medium   | windows  |
 high
 
 ### **Parent Image Naming Scheme**
@@ -45,10 +45,10 @@ high
 <base platform>-<type>-<CPU architecture>
 e.g. windows-server-2019-english-full-sql-2019-enterprise-x86 or amazon-linux-2023-ecs-optimized-arm64
 ```
-| Base Name       | Type                         | CPU Architecture |
-| ------------------- | -------------------------------- | -------------------- |
-| amazon-linux-2      | ecs-optimized                    | x86                  |
-| amazon-linux-2023   | ecs-optimized-kernel-5           | arm64                |
+| Base Name           | Type                             | CPU Architecture |
+| ------------------- | -------------------------------- | ---------------- |
+| amazon-linux-2      | ecs-optimized                    | x86              |
+| amazon-linux-2023   | ecs-optimized-kernel-5           | arm64            |
 | windows-server-2016 | english-full-base                |
 | windows-server-2019 | english-full-sql-2019-enterprise |
 | windows-server 2022 | english-core-base                |
