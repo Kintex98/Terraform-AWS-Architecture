@@ -34,7 +34,7 @@ Used to dynamically deploy "n" amis where "n" = # of objects defined in var.ami_
 stig-build-<platform>-<severity>
 e.g. stig-build-windows-medium
 ```
-| **Severity** | **Platform** |
+| Severity | Platform |
 | ------------ | ------------ |
 | low          | linux        |
 | medium       | windows      |
@@ -45,7 +45,7 @@ high
 <base platform>-<type>-<CPU architecture>
 e.g. windows-server-2019-english-full-sql-2019-enterprise-x86 or amazon-linux-2023-ecs-optimized-arm64
 ```
-| **Base Name**       | **Type**                         | **CPU Architecture** |
+| Base Name       | Type                         | CPU Architecture |
 | ------------------- | -------------------------------- | -------------------- |
 | amazon-linux-2      | ecs-optimized                    | x86                  |
 | amazon-linux-2023   | ecs-optimized-kernel-5           | arm64                |
