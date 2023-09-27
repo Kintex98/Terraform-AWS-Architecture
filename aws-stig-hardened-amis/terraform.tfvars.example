@@ -1,0 +1,42 @@
+ami_specs = {
+  linux-ecs = {
+    instance_types  = ["m6a.large", "m6i.large"]
+    parent_image    = "amazon-linux-2023-ecs-optimized-x86"
+    platform        = "amazon_linux"
+    target_accounts = ["111111111111"]
+    target_regions  = ["us-east-1"]
+  }
+  windows-2016 = {
+    instance_types  = ["m6a.large", "m6i.large"]
+    parent_image    = "windows-server-2016-english-full-base-x86"
+    platform        = "windows_server"
+    target_accounts = ["111111111111"]
+    target_regions  = ["us-east-1"]
+  }
+  windows-2022 = {
+    instance_types  = ["m6a.large", "m6i.large"]
+    parent_image    = "windows-server-2022-english-full-base-x86"
+    platform        = "windows_server"
+    target_accounts = ["111111111111"]
+    target_regions  = ["us-east-1"]
+  }
+}
+
+platform_specs = {
+  amazon_linux = {
+    components  = ["aws-cli-version-2-linux", "stig-build-linux-medium", "update-linux"]
+    device_name = "/dev/xvda"
+    volume_size = 30
+    volume_type = "gp3"
+  }
+
+  windows_server = {
+    components  = ["aws-cli-version-2-windows", "ec2launch-v2-windows", "powershell-windows", "stig-build-windows-medium", "update-windows"]
+    device_name = "/dev/sda1"
+    volume_size = 30
+    volume_type = "gp3"
+  }
+}
+
+security_group_ids = ["sg-11111111111111111"]
+subnet_id          = "subnet-11111111111111111"
