@@ -1,0 +1,6 @@
+version: 0.0
+os: windows
+hooks:
+  BeforeInstall:
+    - location: scripts/Update-Notepad++.ps1
+      timeout: 120
