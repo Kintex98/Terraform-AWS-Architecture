@@ -17,7 +17,7 @@ The goal of this repository is to provide solutions for key AWS automation needs
 
 ## **aws-codedeploy-zips**
 
-Used to dynamically define and generate codedeploy zip files en masse. For every directory under [aws-codedeploy-zips/codedeploy]([aws-codedeploy-zips/codedeploy](https://github.com/Kintex98/terraform-aws-automation-solutions/tree/main/aws-codedeploy-zips/codedeploy)), we will generate a zip file whose contents are all the files under that directory with its terraform variable calls filled out.
+Used to dynamically define and generate codedeploy zip files en masse. For every directory under [aws-codedeploy-zips/codedeploy]([aws-codedeploy-zips/codedeploy](https://github.com/Kintex98/terraform-aws-automation-solutions/tree/main/aws-codedeploy-zips/codedeploy), we will generate a zip file whose contents are all the files under that directory with its terraform variable calls filled out.
 
 **Depends On**
 - S3 Bucket - Any bucket will do. Needed to store the codedeploy zip files
